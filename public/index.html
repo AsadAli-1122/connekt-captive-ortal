@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Button Demo</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Section 1 -->
+    <div class="section_1" id="section_1">
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+      <div class="side">
+        <div class="loader1"></div>
+        <div class="loader2"></div>
+      </div>
+      <div class="form form-css">
+        <div name="login_form">
+          <br />
+          <h2 style="font-size: 1em; text-align: center">Welcome to</h2>
+          <a href="https://connekt.com.pk/?OpenWifi">
+            <img
+              alt="Connekt 2.0"
+              src="./images/captiveportal-tr-connekt.png"
+              width="100%;"
+            />
+          </a>
+          <br />
+          <p style="font-size: 1em; text-align: center">Enjoy FREE Internet</p>
+          <div id="error-message"></div>
+          <br />
+          <input
+            name="redirurl"
+            type="hidden"
+            value="https://connekt.com.pk/?OpenWifi"
+          />
+          <button
+            name="accept"
+            class="login login-submit"
+            id="login"
+            style="text-align: center; cursor: pointer"
+          >CONTINUE</button>
+          <br /><br />
+          <div style="font-size: 1em; text-align: center">
+            <span
+              ><i>Service Provided by</i>
+              <strong
+                ><a href="https://utelnetworks.com/?OpenWifi"
+                  >UTel Networks</a
+                ></strong
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section_2" id="section_2" style="display: none">
+      <div id="video-container"
+      style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        ">
+      <video id="myVideo" autoplay>
+        <source src="./video/wifi.mp4" type="video/mp4" />
+      </video>
+    </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section_3" id="section_3" style="display: none">
+      <div id="form-container">
+        <div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+        <div class="side">
+          <div class="loader1"></div>
+          <div class="loader2"></div>
+        </div>
+        <div class="form form-css">
+          <div class="login_form">
+            <img alt="Connekt 2.0" src="./images/captiveportal-tr-connekt.png" width="100%;" onclick="location.reload()"
+              style="cursor: pointer;">
+              <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full Name" />
+                <div id="error_name" style="padding-top: 15px;font-size: small;color: red;padding-left: 10px; padding-right: 10px;"></div>
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" placeholder="923001234567" /><br />
+                <div id="error_number" style="padding-bottom: 15px;font-size: small;color: red;padding-left: 10px; padding-right: 10px;"></div>
+                <button id="send_otp">Send Code</button><br /><br />
+              </form>
+              <form>
+                <label for="otp">OTP Code:</label>
+                <input type="number" id="otp_input" name="otp" /><br />
+                <input name="redirurl" type="hidden" value="https://connekt.com.pk/?OpenWifi" />
+                <div id="error_otp" style="padding-bottom: 15px;font-size: small;color: red;padding-left: 10px; padding-right: 10px;"></div>
+                <button id="verify_otp">Verify</button><br />
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section_4" id="section_4" style="display: none">
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+      <div class="side">
+        <div class="loader1"></div>
+        <div class="loader2"></div>
+      </div>
+      <div class="form form-css">
+        <div name="login_form">
+          <br />
+          <h2 style="font-size: 1em; text-align: center">Thanks for connecting with </h2>
+          <a href="https://connekt.com.pk/?OpenWifi">
+            <img
+              alt="Connekt 2.0"
+              src="./images/captiveportal-tr-connekt.png"
+              width="100%;"
+            />
+          </a>
+          <br />
+          <p style="font-size: 1em; text-align: center">Enjoy FREE Internet</p>
+          <div id="error-message"></div>
+          <br />
+          <input
+            name="redirurl"
+            type="hidden"
+            value="https://connekt.com.pk/?OpenWifi"
+          />
+          <button
+            name="accept"
+            class="login login-submit"
+            onclick="window.location.href='https://www.google.com'"
+            style="text-align: center; cursor: pointer"
+          >GOOGLE</button>
+          <br /><br />
+          <div style="font-size: 1em; text-align: center">
+            <span
+              ><i>Service Provided by</i>
+              <strong
+                ><a href="https://utelnetworks.com/?OpenWifi"
+                  >UTel Networks</a
+                ></strong
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

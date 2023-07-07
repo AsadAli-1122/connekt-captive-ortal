@@ -1,0 +1,344 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    overflow: hidden;
+    width: fit-content;
+    height: fit-content;
+}
+
+.background {
+    width: auto;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child {
+    background: linear-gradient(#606060,
+            #002653);
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child {
+    background: linear-gradient(to right,
+            #ff512f,
+            #f09819);
+    right: -30px;
+    bottom: -80px;
+}
+
+.side .shape3 {
+    background: linear-gradient(#19d87f, #f09819);
+    box-sizing: border-box;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    outline: none;
+    position: absolute;
+    margin: 5% 81%;
+}
+
+.side .shape4 {
+    background: linear-gradient(#7fd819, #f0197d);
+    box-sizing: border-box;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+    outline: none;
+    position: absolute;
+    margin: 30% 5%;
+}
+
+.form {
+    height: auto;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.form * {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.form h3 {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -34px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.form i h2 {
+    font-size: 21px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: -51px;
+    background-color: #fff;
+    width: 30px;
+    height: 25px;
+    font-family: Etelka Narrow Medium Pro;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 0.5s;
+
+}
+
+::placeholder {
+    color: #b3b3b3aa;
+}
+
+button {
+    /* margin-top: 50px; */
+    width: 100%;
+    background-color: rgb(235, 138, 13);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.social {
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div {
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0.27);
+    color: #eaf0fb;
+    text-align: center;
+}
+
+.social div:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+}
+
+.social .fb {
+    margin-left: 25px;
+    color: #fff;
+    background-color: darkcyan;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.social .ty {
+    margin-right: 4px;
+    background-color: darkcyan;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+
+}
+
+.loader1 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #FF9100);
+    animation: animate 2s linear infinite;
+    left: 85%;
+    top: 50px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader1:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.loader1:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #000;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #FF9100);
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+/* ----------------------------- */
+.loader2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #FF9100);
+    animation: animate 2s linear infinite;
+    top: 250px;
+    left: 3%;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader2:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.loader2:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #000;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent, transparent 40%, #FF9100);
+    z-index: 1000;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+.heading:hover {
+    color: rebeccapurple;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.heading {
+    transition: 0.5s;
+    text-shadow: 10px 10px 10px 10px red;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+input:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: rgb(235, 138, 13);
+}
+
+.form-css {
+    justify-content: center;
+}
+
+.container{
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+  }
+
+#myVideo {
+    overflow: hidden;
+    height: 90%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
