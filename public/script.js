@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       if (response.ok) {
+        showSuccessMessage('Verification code sent to your phone number!');
         console.log('OTP code sent successfully!');
       } else {
         console.log('Failed to send OTP code.');
@@ -192,6 +193,12 @@ document.addEventListener('DOMContentLoaded', function() {
     errorNumber.innerText = '';
     errorNumber.style.display = 'none';
   }
+
+function showSuccessMessage(message) {
+  const successMessage = document.getElementById('success_message');
+  successMessage.innerText = message;
+  successMessage.style.display = 'block';
+}
 
   
 });
