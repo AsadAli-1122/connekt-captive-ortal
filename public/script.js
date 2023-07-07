@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     const enteredOtp = otpInput.value;
     if (enteredOtp.trim() === '') {
-      showErrorName('Username is required.');
+      showErrorOtp('OTP is required.');
       return;
     }
   
