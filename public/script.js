@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function playRandomVideo() {
     const videoSources = [
-      './video/video_1.mp4',
-      './video/video_2.mp4',
-      './video/video_3.mp4',
-      './video/video_4.mp4'
+      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_1.mp4?alt=media&token=799caab5-92f3-4ec1-9f76-a9ed6a054533',
+      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_2.mp4?alt=media&token=661bc283-ba99-43ba-a54f-44d440a44e7a',
+      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_3.mp4?alt=media&token=f013d804-b647-4689-9606-e3a9d2ab544a',
+      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_4.mp4?alt=media&token=be880068-8961-468b-9574-5edd308d0aa0'
     ];
     const randomIndex = Math.floor(Math.random() * videoSources.length);
     const randomVideoSource = videoSources[randomIndex];
