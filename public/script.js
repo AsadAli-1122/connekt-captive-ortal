@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function playRandomVideo() {
     const videoSources = [
-      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_1.mp4?alt=media&token=799caab5-92f3-4ec1-9f76-a9ed6a054533',
-      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_2.mp4?alt=media&token=661bc283-ba99-43ba-a54f-44d440a44e7a',
-      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_3.mp4?alt=media&token=f013d804-b647-4689-9606-e3a9d2ab544a',
-      'https://firebasestorage.googleapis.com/v0/b/rj-ppp.appspot.com/o/videos%2Fvideo_4.mp4?alt=media&token=be880068-8961-468b-9574-5edd308d0aa0'
+      'https://firebasestorage.googleapis.com/v0/b/connect-captive-portal.appspot.com/o/videos%2Fvideo_1.mp4?alt=media&token=fc68ae79-30e6-4523-81f8-a32bad40bcc6',
+      'https://firebasestorage.googleapis.com/v0/b/connect-captive-portal.appspot.com/o/videos%2Fvideo_2.mp4?alt=media&token=f55a02b6-4953-4130-bbbe-73b763903b5a',
+      'https://firebasestorage.googleapis.com/v0/b/connect-captive-portal.appspot.com/o/videos%2Fvideo_3.mp4?alt=media&token=bf8fb228-b441-4834-a4e5-ce1d76191960',
+      'https://firebasestorage.googleapis.com/v0/b/connect-captive-portal.appspot.com/o/videos%2Fvideo_4.mp4?alt=media&token=6d2c3860-58d8-498b-a8e2-ae720a64cf1f'
     ];
     const randomIndex = Math.floor(Math.random() * videoSources.length);
     const randomVideoSource = videoSources[randomIndex];
